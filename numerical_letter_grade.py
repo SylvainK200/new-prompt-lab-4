@@ -59,5 +59,6 @@ def test_numerical_letter_grade():  # pragma: no cover
     assert numerical_letter_grade([4.0, 3, 1.7, 2, 3.5]) == ['A+', 'B', 'C-', 'C', 'A-']  # pragma: no cover
     assert numerical_letter_grade([1.2]) == ['D+']  # pragma: no cover
 
-
+def test_numerical_letter_grade_frontier():
+    assert numerical_letter_grade([4.0, 3.0, 2.0, 1.0, 0.0]) == ['A+', 'B', 'C', 'D+', 'E']
 
